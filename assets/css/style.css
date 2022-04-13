@@ -61,10 +61,13 @@ Table of Content:
   1. Google Fonts
 ========================================================================*/
 @font-face {
-  font-family: zurich;
-  src: url("assets/fonts/Zurich Condensed BT.ttf");
-}
+  font-family: 'zurichultraBlkExbt';
+  src: url('/assets/fonts/zurich_ultra_black_extended_bt-webfont.woff') format('woff2'),
+       url('/assets/fonts/zurich_ultra_black_extended_bt-webfont.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
 
+}
 
 /*======================================================================
   2. Basic Styles
@@ -300,16 +303,16 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder { opacity:1; -ms-fil
 #AccessibleNav { padding-left:0; }
 .mobile-nav-wrapper, .site-header__logo.mobileview { display:none; }
 @media (min-width:990px) {
-	#siteNav a { text-decoration:none; font-size:13px; display:block; opacity:1; -webkit-font-smoothing: antialiased; letter-spacing:0.05em; position:relative; }
-	#siteNav > li { display:inline-block; text-align:left; }
+	#siteNav a { text-decoration:none; font-size:11px; display:block; opacity:1; -webkit-font-smoothing: antialiased; letter-spacing:0.08em; position:relative; }
+	#siteNav > li { display:inline-block; text-align:left;}
 	#siteNav > li > a { color:#000000; padding:0 20px; text-transform:uppercase; line-height:40px; }
-	#siteNav.medium > li a { font-weight:600; }
+	#siteNav.medium > li a { font-weight:800; }
 	#siteNav.medium > li > a .anm { display:none; }
 	
 	#siteNav > li > a:hover:hover,
 	#siteNav > li > a:hover { color:#339498; }
 	
-	#siteNav > li .megamenu { opacity:0; visibility:hidden; padding:25px 25px 0; width:100%; position:absolute; top:59px; left:0; z-index:999; background-color:#fff; box-shadow: 2px 2px 1px 0px rgba(0,0,0,0.3); -webkit-box-shadow: 2px 2px 1px 0px rgba(0,0,0,0.3); pointer-events:none; -ms-transition:all 0.3s ease; -webkit-transition:all 0.3s ease; transition:all 0.3s ease; border:1px solid #eee; max-height:600px; overflow:auto; }
+	#siteNav > li .megamenu { opacity:0; visibility:hidden; padding:25px 25px 0; width:85vw; position:absolute; top:59px; left:5px; z-index:999; background-color:#fff; box-shadow: 2px 2px 1px 0px rgba(0,0,0,0.3); -webkit-box-shadow: 2px 2px 1px 0px rgba(0,0,0,0.3); pointer-events:none; -ms-transition:all 0.3s ease; -webkit-transition:all 0.3s ease; transition:all 0.3s ease; border:1px solid #eee; min-height:600px; overflow:auto; }
 	#siteNav > li .megamenu ul { padding:0; list-style:none; }
 	#siteNav > li:hover > .megamenu { top:40px; opacity:1; visibility:visible; pointer-events:visible; }
 	#siteNav > li .megamenu li.lvl-1 { margin-bottom:25px; }
@@ -1321,13 +1324,13 @@ input.checkbox { height:auto; vertical-align:middle; padding:0; box-shadow:none;
   28.7 Home8 - Jewellery  ---------------
   ---------------------------------------*/
 body.home8-jewellery { font-size:14px; }
-.home8-jewellery .section-header h2, .home8-jewellery .section-header .h2 { font-family:Poppins,Helvetica,Tahoma,Arial,sans-serif; font-size:20px; font-weight:400;letter-spacing:0.03em;  }
+.home8-jewellery .section-header h2, .home8-jewellery .section-header .h2 { font-family: zurichultraBlkExbt; font-size:20px; letter-spacing:0.03em;  }
 .home8-jewellery-top { background:#141414; color:#fff; }
 .home8-jewellery-top p, .home8-jewellery-top a, .home8-jewellery-top select, .home8-jewellery-top .fa, .home8-jewellery-top span.selected-currency { color:#fff; }
 .home8-jewellery-header .site-header__search { float:none; }
 
 .home8-jewellery #AccessibleNav.belowlogo { border-bottom:1px solid #eeeeee; }
-.home8-jewellery #siteNav.medium > li a { font-weight:400; }
+.home8-jewellery #siteNav.medium > li a {  }
 
 .home8-jewellery .slideshow__text-content { margin-top:0; }
 .home8-jewellery .slideshow .slideshow__title { font-family:Poppins,Helvetica,Tahoma,Arial,sans-serif; color:#000; font-size:40px; }
